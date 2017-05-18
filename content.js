@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(
       $.each($(".uiScrollableArea.fade .FriendRequestAdd"), function(index, elem) {
         setTimeout(function() {
           elem.click();
-        }, 100)
+        }, 500 * index)
       })
       alert("completed");
     }
