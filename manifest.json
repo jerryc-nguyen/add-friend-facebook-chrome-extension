@@ -1,0 +1,19 @@
+{
+    "name": "Facebook Tools",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Add multiple friends at one.",
+    "browser_action": {
+      "default_icon": {
+        "20": "icons/f-icon.png"
+      },
+      "default_title": "Facebook tooks kit",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["lib/jquery.min.js", "content.js"]
+      }
+    ]
+}
